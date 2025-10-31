@@ -18,6 +18,12 @@ function Canvas( { details }) {
                 setIndex({ value: Math.round(index.value) })
             }
         });
+        gsap.from(canvasRef.current, {
+            opacity: 0,
+            scale: Math.random().toFixed(2),
+            duration: 2.5,
+            ease: "circ.out"
+        })
     });
     
     useEffect(() => {
