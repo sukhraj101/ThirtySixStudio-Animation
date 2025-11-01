@@ -121,7 +121,7 @@ function App() {
         </div>
 
         {showCanvas && 
-          data[0].map((canvasdets, i) => (
+          data[1].map((canvasdets, i) => (
             <Canvas 
               key={i} 
               details={canvasdets}
