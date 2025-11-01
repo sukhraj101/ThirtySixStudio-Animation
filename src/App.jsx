@@ -119,6 +119,16 @@ function App() {
             </h1>
           </div>
         </div>
+
+        {showCanvas && 
+          data[0].map((canvasdets, i) => (
+            <Canvas 
+              key={i} 
+              details={canvasdets}
+            />
+          ))
+        }
+        <div className="w-full relative z-[1] h-screen"></div>
       </div>
     </>
   );
